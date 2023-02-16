@@ -1,0 +1,51 @@
+.textbox {
+    @include flex-column-align-center;
+
+    &--hero {
+        @include flex-column-align-center;
+        
+        & .paragraph {
+            margin-top: scaleSize(24px, 26px);
+            max-width: 37.5rem;
+        }
+    }
+
+    &--stats {
+        align-items: flex-start;
+        & .heading {
+            order: 2;
+            align-self: center;
+        }
+    }
+
+    &--stories {
+        margin-top: 40px;
+
+        @include respond(medium-screen) {
+        margin-top: 0px;
+
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        & .paragraph {
+            margin-top: scaleSize(16px, 26px, 375px, 768px);
+            max-width: 520px;
+
+            @include respond(medium-screen) {
+                margin-top: scaleSize(16px, 26px, 768px, 1440px);
+                width: scaleSize(320px, 520px, 768px, 1440px);
+            }
+        }
+    }
+
+    &--form {
+        align-items: flex-start;
+        text-align: left;
+        max-width: 344px;
+
+        & .paragraph {
+            margin-top: 16px;
+        }
+    }
+}

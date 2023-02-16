@@ -1,0 +1,31 @@
+.image {
+    &--hero {
+            width: min(100%, 1016px)
+    }
+
+    &--story-1 {
+        width: min(510px, 100%);
+
+        @include respond(medium-screen) {
+            width: scaleSize(250px, 510px);
+            order: 2;
+        }
+    }
+
+    &--story-2 {
+        width: min(530px, 100%);
+
+        @include respond(medium-screen) {
+            width: scaleSize(265px, 530px);
+        }
+    }
+
+    &--story-3 {
+        width: min(530px, 100%);
+
+        @include respond(medium-screen) {
+            width: scaleSize(267px, 530px);
+            order: 2;
+        }
+    }
+}

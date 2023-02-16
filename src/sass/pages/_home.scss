@@ -1,0 +1,51 @@
+.main {
+    width: 100%;
+    // background-color: black;
+    z-index: 1;
+
+    
+    & > * {
+        width: 100%;
+        @include flex-column-align-center;
+    }
+}
+
+.hero { 
+        padding: 0 scaleSize(36px, 72px, 375px, 768px);
+    
+        &__textbox {
+            margin-top: scaleSize(112px, 225px);
+        }
+
+        &__btn {
+            margin-top: 3rem;
+        }
+
+        &__image {
+            margin-top: scaleSize(104px, 120px);
+        }
+
+        &__stats {
+            margin-top: 120px;
+        }
+    }   
+
+.stories {
+    margin-top: min(35vw, 305px);
+
+        &__list {
+            width: 100%;
+            max-width: 1440px;
+        }
+    }
+
+.cta {
+        margin-top: min(45vw, 308px);
+        padding: 0 scaleSize(36px, 72px, 375px, 768px);
+
+        &__btn {
+            margin-top: scaleSize(40px, 42px);
+        }
+    }
+
+

@@ -1,0 +1,72 @@
+.footer {
+    @include flex-column-align-center;
+    background-color: $color-very-dark-cyan;
+    margin-top: min(343px, 82.13vw);/* 308px/82.13vw , 343*/;
+    width: min(100%, 1440px);
+    position: relative;
+    padding:    scaleSize(52px, 115px) 
+                    scaleSize(24px, 48px, 375px, 768px)
+                    scaleSize(46px, 103px)
+                    scaleSize(24px, 48px, 375px, 768px);
+
+    @include respond(medium-screen) {
+        padding-right: scaleSize(48px, 120px, 768px, 1024px);
+        padding-left: scaleSize(48px, 120px, 768px, 1024px);
+    }
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-image: url("/images/bg-footer-top-mobile.svg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        left: 0;
+        height: 15vw;
+        width: 100%;
+        top: -14vw;
+
+        @include respond(medium-screen) {
+            background-image: url("/images/bg-footer-top-desktop.svg");
+            height: 11vw;
+            top: -10.5vw;
+        }
+    }
+
+    &__inner {
+        width: min(100%, 344px);
+        @include flex-column-align-center;
+        align-items: flex-start;
+
+        @include respond(medium-screen) {
+            width: min(100%, 1200px);
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+    }
+
+    &__attribution {
+        order: 2;
+        margin-top: 104px;
+
+        @include respond(medium-screen) {
+            margin-top: 0px;
+            order: 1;
+          }
+    }
+
+    &__form {
+        order: 1;
+
+        @include respond(medium-screen) {
+            order: 2;
+          }
+    }
+
+    &__social-media-panel {
+        margin-top: scaleSize(3rem, 5rem);
+        order: 3;
+    }
+}
