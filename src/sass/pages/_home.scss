@@ -3,51 +3,69 @@
 .main {
     width: 100%;
     // background-color: black;
-    z-index: 1;
 
-    
     & > * {
         width: 100%;
         @include flex-column-align-center;
     }
 }
 
-.hero { 
-        padding: 0 scaleSize(36px, 72px, 375px, 768px);
-    
-        &__textbox {
-            margin-top: scaleSize(112px, 225px);
-        }
+.hero {
+    background-image: url("../assets/bg-hero-mobile.svg");
+    background-color: $color-very-pale-cyan;
+    background-repeat: no-repeat;
+    background-size: auto 93%;
+    background-position: top center;
 
-        &__btn {
-            margin-top: 3rem;
-        }
+    @include respond(medium-screen) {
+        background-image: url("../assets/bg-hero-desktop.svg");
+    }
 
-        &__image {
-            margin-top: scaleSize(104px, 120px);
-        }
+    &__inner {
+        @include flex-column-align-center;
+        margin-top: scaleSize(131px, 187px);
+        width: min(100% - 2 * scaleSize(35px, 80px), 1270px);
 
-        &__stats {
-            margin-top: 120px;
+        @include respond(medium-screen) {
+            width: min(100% - 2 * scaleSize(1rem, 5rem), 80rem);
+            flex-direction: row;
+            // justify-content: center;
         }
-    }   
+    }
+
+    &__textbox {
+    }
+
+    &__btn {
+        margin-top: 32px;
+        margin-bottom: scaleSize(37px, 72px);
+    }
+
+    &__image {
+        margin-top: 56px;
+        margin-bottom: scaleSize(37px, 72px);
+
+        @include respond(medium-screen) {
+            margin-top: 0;
+            margin-left: 54px;
+        }
+    }
+}
 
 .stories {
     margin-top: min(35vw, 305px);
 
-        &__list {
-            width: 100%;
-            max-width: 1440px;
-        }
+    &__list {
+        width: 100%;
+        max-width: 1440px;
     }
+}
 
 .cta {
-        margin-top: min(45vw, 308px);
-        padding: 0 scaleSize(36px, 72px, 375px, 768px);
+    margin-top: min(45vw, 308px);
+    padding: 0 scaleSize(36px, 72px, 375px, 768px);
 
-        &__btn {
-            margin-top: scaleSize(40px, 42px);
-        }
+    &__btn {
+        margin-top: scaleSize(40px, 42px);
     }
-
-
+}

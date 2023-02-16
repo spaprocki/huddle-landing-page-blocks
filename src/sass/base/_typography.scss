@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+  
   body {
      font-family: $default-font-stack;
      font-weight: $default-font-weight;
@@ -11,16 +13,8 @@
     font-family: $default-font-stack-heading;
 
     &--hero {
-      font-size: scaleSize(32px, 48px);
-      line-height: scaleSize(36px, 72px);
-    }
-
-    &--stats {
-      font-family: $default-font-stack;
-      font-size: scaleSize(14px, 24px);
-      font-weight: $default-font-weight;
-      line-height: scaleSize(20px, 36px);
-      color: $color-grey;
+      font-size: scaleSize(24px, 40px);
+      line-height: scaleSize(36px, 60px);
     }
 
     &--stories {
@@ -32,33 +26,17 @@
       font-size: scaleSize(24px, 40px);
       line-height: scaleSize(36px, 60px);
     }
-
-    &--form {
-      text-transform: uppercase;
-      font-family: $default-font-stack;
-      font-size: scaleSize(20px, 24px);
-      line-height: scaleSize(30px, 36px);
-      color: $color-white;
-    }
   }
 
   .paragraph {
     &--hero {
-      font-size: scaleSize(14px, 20px);
-      line-height: scaleSize(21px, 30px);
-    }
-
-    &--stats {
-      font-weight: $default-font-weight-heading;
-      font-size: scaleSize(60px, 96px);
-      line-height: scaleSize(92px, 144px);
-      color: $color-very-dark-cyan;
-      text-align: left;
+      font-size: scaleSize(16px, 20px);
+      line-height: scaleSize(24px, 30px);
     }
 
     &--stories {
       font-size: scaleSize(14px, 16px);
-      line-height: scaleSize(21px, 24px);
+      line-height: scaleSize(18px, 27px);
     }
 
     &--footer {

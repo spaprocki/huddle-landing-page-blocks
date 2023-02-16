@@ -1,68 +1,68 @@
 @use "../abstracts" as *;
 
-
 .btn {
-    &,
-    &:link,
-    &:visited {
+  &,
+  &:link,
+  &:visited {
     text-decoration: none;
     display: inline-block;
     transition: transform 0.2s;
     font-family: inherit;
-    font-weight: $default-font-weight-heading;
+    font-weight: $default-font-weight-btn;
     cursor: pointer;
+    border: none;
   }
 
   &:active {
     transform: scale(1.02);
   }
 
-  &:focus,:focus-visible {
+  &:focus,
+  :focus-visible {
     outline-width: 3px;
-    outline-style:  dashed;
-    outline-offset: 5px;}
+    outline-style: dashed;
+    outline-offset: 5px;
+  }
 
-    &:focus:not(:focus-visible) {
-      outline: none;
-    }
-  
-  
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
   &--primary {
     background-color: $color-pink;
-    font-size: scaleSize(12px, 20px);
-    line-height: scaleSize(18px, 30px);
+    font-size: scaleSize(12px, 14px);
+    line-height: scaleSize(16px, 20px);
     color: $color-white;
-    padding: scaleSize(11px, 25px) scaleSize(40px, 100px);
-    border: none;
-    border-radius: scaleSize(20px, 40px);
-    
+    padding: scaleSize(12px, 18px) scaleSize(60px, 70px);
+    border-radius: scaleSize(20px, 28px);
+    box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+
     &:hover {
       background: $color-light-pink;
     }
 
-    &:focus,:focus-visible {
+    &:focus,
+    :focus-visible {
       outline-color: $color-pink;
     }
   }
 
   &--secondary {
-    background: transparent;
-    color: $color-pink;
-    font-weight: $default-font-weight;
-    font-size: scaleSize(10px, 13px);
-    line-height: scaleSize(15px, 22px);
-    padding: scaleSize(5px, 9px) scaleSize(18px, 30px);
-    border: 1px solid $color-pink;
-    border-radius: scaleSize(12px, 20px);
-
+    background: $color-white;
+    color: $color-very-dark-cyan;
+    font-size: scaleSize(10px, 14px);
+    line-height: scaleSize(14px, 19px);
+    padding: scaleSize(5px, 14px) scaleSize(22px, 64px);
+    border-radius: scaleSize(12px, 24px);
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
 
     &:hover {
-      border-color: $color-light-pink;
-      color: $color-light-pink;
+      color: $color-grey;
     }
 
-    &:focus,:focus-visible {
-      outline-color: $color-light-pink;
+    &:focus,
+    :focus-visible {
+      outline-color: currentColor;
     }
   }
 

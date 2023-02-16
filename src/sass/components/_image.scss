@@ -2,7 +2,11 @@
 
 .image {
     &--hero {
-            width: min(100%, 1016px)
+        width: min(100%, 680px);
+
+        @include respond(medium-screen) {
+            width: scaleSize(296px, 680px, 768px, 1440px);
+        }
     }
 
     &--story-1 {
