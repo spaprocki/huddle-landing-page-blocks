@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .social-media-panel {
     list-style-type: none;
     width: scaleSize(6.5rem, 9rem);

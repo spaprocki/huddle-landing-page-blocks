@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .image {
     &--hero {
             width: min(100%, 1016px)

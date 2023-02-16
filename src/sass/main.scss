@@ -1,27 +1,17 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@use "components/attribution";
+@use "components/button";
+@use "components/form";
+@use "components/image";
+@use "components/input";
+@use "components/link";
+@use "components/logo";
+@use "components/nav";
+@use "components/social-media-panel";
+@use "components/stats";
+@use "components/story";
+@use "components/textbox";
 
-@import "base/base";
-@import "base/reset";
-@import "base/typography";
-@import "base/utilities";
+@use "layout/footer";
+@use "layout/header";
 
-@import "components/attribution";
-@import "components/button";
-@import "components/form";
-@import "components/image";
-@import "components/input";
-@import "components/link";
-@import "components/logo";
-@import "components/nav";
-@import "components/social-media-panel";
-@import "components/stats";
-@import "components/story";
-@import "components/textbox";
-
-@import "layout/buttons-container";
-@import "layout/footer";
-@import "layout/header";
-
-@import "pages/home";
+@use "pages/home";

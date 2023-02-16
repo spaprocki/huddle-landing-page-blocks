@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .logo {
     width: scaleSize(96px, 240px, 375px, 768px);
 

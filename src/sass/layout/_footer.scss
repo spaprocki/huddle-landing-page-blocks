@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .footer {
     @include flex-column-align-center;
     background-color: $color-very-dark-cyan;
