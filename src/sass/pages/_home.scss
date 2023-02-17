@@ -58,10 +58,17 @@
 }
 
 .cta {
-    margin-top: min(45vw, 308px);
-    padding: 0 scaleSize(36px, 72px, 375px, 768px);
+    margin-top: scaleSize(120px, 160px);
+
+    &__inner {
+        width: min(100% - 2 * scaleSize(0.75rem, 2.25rem, 23.4375rem, 48rem), 800px);
+        padding-top: scaleSize(41px, 56px);
+        padding-bottom: scaleSize(41px, 56px);
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+        border-radius: 15px;
+    }
 
     &__btn {
-        margin-top: scaleSize(40px, 42px);
+        margin-top: 32px;
     }
 }
