@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/spaprocki/huddle-landing-page-blocks)
-- Live Site URL: [netlify](https://spaprocki-huddle-landing-page-curved.netlify.app/)
+- Live Site URL: [netlify](https://spaprocki-huddle-landing-page-blocks.netlify.app/)
 
 ## My process
 
