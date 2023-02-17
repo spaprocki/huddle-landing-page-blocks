@@ -33,9 +33,6 @@
         }
     }
 
-    &__textbox {
-    }
-
     &__btn {
         margin-top: 32px;
         margin-bottom: scaleSize(37px, 72px);
@@ -53,11 +50,10 @@
 }
 
 .stories {
-    margin-top: min(35vw, 305px);
+    margin-top: scaleSize(59px, 160px);
 
     &__list {
-        width: 100%;
-        max-width: 1440px;
+        width: min(100% - 2 * scaleSize(20px, 104px), 1232px);
     }
 }
 

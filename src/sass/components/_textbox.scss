@@ -18,31 +18,22 @@
         }
     }
 
-    &--stats {
-        align-items: flex-start;
-        & .heading {
-            order: 2;
-            align-self: center;
-        }
-    }
-
     &--stories {
-        margin-top: 40px;
+        margin-top: 16px;
 
         @include respond(medium-screen) {
             margin-top: 0px;
-
             align-items: flex-start;
             text-align: left;
+            width: scaleSize(256px, 500px, 768px, 1440px);
         }
 
         & .paragraph {
-            margin-top: scaleSize(16px, 26px, 375px, 768px);
+            margin-top: 16px;
             max-width: 520px;
 
             @include respond(medium-screen) {
                 margin-top: scaleSize(16px, 26px, 768px, 1440px);
-                width: scaleSize(320px, 520px, 768px, 1440px);
             }
         }
     }

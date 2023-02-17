@@ -1,56 +1,57 @@
 @use "../abstracts" as *;
-  
-  body {
-     font-family: $default-font-stack;
-     font-weight: $default-font-weight;
-     font-size: $default-font-size;
-     color: $color-very-dark-cyan;
-     text-align: center;
+
+body {
+  font-family: $default-font-stack;
+  font-weight: $default-font-weight;
+  font-size: $default-font-size;
+  color: $color-very-dark-cyan;
+  text-align: center;
+}
+
+.heading {
+  font-weight: $default-font-weight-heading;
+  font-family: $default-font-stack-heading;
+
+  &--hero {
+    font-size: scaleSize(24px, 40px);
+    line-height: scaleSize(36px, 60px);
   }
 
-  .heading {
-    font-weight: $default-font-weight-heading;
-    font-family: $default-font-stack-heading;
-
-    &--hero {
-      font-size: scaleSize(24px, 40px);
-      line-height: scaleSize(36px, 60px);
-    }
-
-    &--stories {
-      font-size: scaleSize(20px, 40px);
-      line-height: scaleSize(30px, 60px);
-    }
-
-    &--cta {
-      font-size: scaleSize(24px, 40px);
-      line-height: scaleSize(36px, 60px);
-    }
+  &--stories {
+    font-size: scaleSize(20px, 28px);
+    line-height: scaleSize(30px, 42px);
   }
 
-  .paragraph {
-    &--hero {
-      font-size: scaleSize(16px, 20px);
-      line-height: scaleSize(24px, 30px);
-    }
+  &--cta {
+    font-size: scaleSize(24px, 40px);
+    line-height: scaleSize(36px, 60px);
+  }
+}
 
-    &--stories {
-      font-size: scaleSize(14px, 16px);
-      line-height: scaleSize(18px, 27px);
-    }
+.paragraph {
+  &--hero {
+    font-size: scaleSize(16px, 20px);
+    line-height: scaleSize(24px, 30px);
+  }
 
-    &--footer {
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 24px;
-      color: $color-white;
-    }
+  &--stories {
+    color: $color-grey;
+    font-size: scaleSize(14px, 18px);
+    line-height: scaleSize(21px, 27px);
+  }
 
-    &--error {
-      color: $color-light-red;
-      font-size: 12px;
-      line-height: 24px;
-      text-align: left;
-    }
+  &--footer {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-white;
+  }
+
+  &--error {
+    color: $color-light-red;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+  }
 }
