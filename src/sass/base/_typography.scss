@@ -13,45 +13,47 @@ body {
   font-family: $default-font-stack-heading;
 
   &--hero {
-    font-size: scaleSize(24px, 40px);
-    line-height: scaleSize(36px, 60px);
+    font-size: scaleSize(1.5rem, 2.5rem);
+    line-height: scaleSize(2.25rem, 3.75rem);
   }
 
   &--stories {
-    font-size: scaleSize(20px, 28px);
-    line-height: scaleSize(30px, 42px);
+    font-size: scaleSize(1.25rem, 1.75rem);
+    line-height: scaleSize(1.875rem, 2.625rem);
   }
 
   &--cta {
-    font-size: scaleSize(18px, 32px);
-    line-height: scaleSize(30px, 60px);
+    font-size: scaleSize(1.125rem, 2rem);
+    line-height: scaleSize(1.875rem, 3.75rem);
   }
 }
 
 .paragraph {
   &--hero {
-    font-size: scaleSize(16px, 20px);
-    line-height: scaleSize(24px, 30px);
+    font-size: scaleSize(1rem, 1.25rem);
+    line-height: scaleSize(1.5rem, 1.875rem);
   }
 
   &--stories {
     color: $color-grey;
-    font-size: scaleSize(14px, 18px);
-    line-height: scaleSize(21px, 27px);
+    font-size: scaleSize(0.875rem, 1.125rem);
+    line-height: scaleSize(1.3125rem, 1.6875rem);
   }
 
   &--footer {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
     color: $color-white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin-left: 1.375rem;
+    margin-right: auto;
   }
 
-  &--error {
-    color: $color-light-red;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: left;
+  &--copyright {
+    color: $color-white;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    font-weight: $default-font-stack-heading;
   }
 }

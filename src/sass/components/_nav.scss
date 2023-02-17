@@ -1,44 +1,24 @@
 @use "../abstracts" as *;
 
 .nav {
-
     &__list {
+        list-style-type: none;
+
         @include respond(medium-screen) {
-            display: grid;
-            row-gap: 0.75rem;
-            column-gap: clamp(0.0625rem, calc(4.32vw + -2.01rem), 1.875rem);
-            grid-template-columns: repeat(3, 10.3125rem);
-            grid-template-areas: 
-            "faq privacy install"
-            "contact press .";
-            max-width: 39.6875rem;
-          }
+            column-count: 2;
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-gap: scaleSize(2.25rem, 8.9375rem);
+        }
     }
 
     &__item {
-        @include respond(medium-screen) {
-            justify-self: start;
+        font-size: 0.875rem;
+        line-height: 1.6875rem;
+        text-align: left;
 
-            &--faq {
-                grid-area: faq;
-            }
-
-            &--contact {
-                grid-area: contact;
-            }
-
-            &--privacy {
-                grid-area: privacy;
-            }
-
-            &--press {
-                grid-area: press;
-            }
-
-            &--install {
-                grid-area: install;
-            }
-          }
-        
+        &:is(:not(:last-child)) {
+            margin-bottom: 1rem;
+        }
     }
 }
