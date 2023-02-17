@@ -19,6 +19,7 @@
 
     @include respond(medium-screen) {
         background-image: url("../assets/bg-hero-desktop.svg");
+        background-size: auto 100%;
     }
 
     &__inner {
